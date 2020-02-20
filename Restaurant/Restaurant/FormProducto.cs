@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BL.Restaurant;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,21 @@ namespace Restaurant
 {
     public partial class FormProducto : Form
     {
+        ProductosBL _productos;
+
         public FormProducto()
         {
             InitializeComponent();
+
+            _productos = new ProductosBL();
+            productoBindingSource.DataSource = _productos.ObtenerProductos();
+
+        }
+
+
+        private void FormProducto_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

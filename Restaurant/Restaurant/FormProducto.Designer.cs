@@ -216,7 +216,7 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewCheckBoxColumn1});
             this.productoDataGridView.DataSource = this.productoBindingSource;
-            this.productoDataGridView.Location = new System.Drawing.Point(12, 41);
+            this.productoDataGridView.Location = new System.Drawing.Point(12, 273);
             this.productoDataGridView.Name = "productoDataGridView";
             this.productoDataGridView.RowTemplate.Height = 24;
             this.productoDataGridView.Size = new System.Drawing.Size(609, 220);
@@ -261,7 +261,7 @@
             // activoLabel
             // 
             activoLabel.AutoSize = true;
-            activoLabel.Location = new System.Drawing.Point(327, 421);
+            activoLabel.Location = new System.Drawing.Point(312, 178);
             activoLabel.Name = "activoLabel";
             activoLabel.Size = new System.Drawing.Size(50, 17);
             activoLabel.TabIndex = 2;
@@ -270,17 +270,16 @@
             // activoCheckBox
             // 
             this.activoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.productoBindingSource, "Activo", true));
-            this.activoCheckBox.Location = new System.Drawing.Point(419, 416);
+            this.activoCheckBox.Location = new System.Drawing.Point(404, 173);
             this.activoCheckBox.Name = "activoCheckBox";
             this.activoCheckBox.Size = new System.Drawing.Size(104, 24);
             this.activoCheckBox.TabIndex = 3;
-            this.activoCheckBox.Text = "checkBox1";
             this.activoCheckBox.UseVisualStyleBackColor = true;
             // 
             // cantidadLabel
             // 
             cantidadLabel.AutoSize = true;
-            cantidadLabel.Location = new System.Drawing.Point(327, 373);
+            cantidadLabel.Location = new System.Drawing.Point(312, 130);
             cantidadLabel.Name = "cantidadLabel";
             cantidadLabel.Size = new System.Drawing.Size(68, 17);
             cantidadLabel.TabIndex = 4;
@@ -289,7 +288,7 @@
             // cantidadTextBox
             // 
             this.cantidadTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productoBindingSource, "Cantidad", true));
-            this.cantidadTextBox.Location = new System.Drawing.Point(419, 370);
+            this.cantidadTextBox.Location = new System.Drawing.Point(404, 127);
             this.cantidadTextBox.Name = "cantidadTextBox";
             this.cantidadTextBox.Size = new System.Drawing.Size(104, 22);
             this.cantidadTextBox.TabIndex = 5;
@@ -297,7 +296,7 @@
             // descripcionLabel
             // 
             descripcionLabel.AutoSize = true;
-            descripcionLabel.Location = new System.Drawing.Point(327, 310);
+            descripcionLabel.Location = new System.Drawing.Point(312, 67);
             descripcionLabel.Name = "descripcionLabel";
             descripcionLabel.Size = new System.Drawing.Size(86, 17);
             descripcionLabel.TabIndex = 6;
@@ -306,7 +305,7 @@
             // descripcionTextBox
             // 
             this.descripcionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productoBindingSource, "Descripcion", true));
-            this.descripcionTextBox.Location = new System.Drawing.Point(419, 307);
+            this.descripcionTextBox.Location = new System.Drawing.Point(404, 64);
             this.descripcionTextBox.Name = "descripcionTextBox";
             this.descripcionTextBox.Size = new System.Drawing.Size(104, 22);
             this.descripcionTextBox.TabIndex = 7;
@@ -314,7 +313,7 @@
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(59, 312);
+            idLabel.Location = new System.Drawing.Point(44, 69);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(23, 17);
             idLabel.TabIndex = 8;
@@ -323,7 +322,7 @@
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productoBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(151, 309);
+            this.idTextBox.Location = new System.Drawing.Point(136, 69);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(104, 22);
             this.idTextBox.TabIndex = 9;
@@ -331,7 +330,7 @@
             // precioLabel
             // 
             precioLabel.AutoSize = true;
-            precioLabel.Location = new System.Drawing.Point(59, 375);
+            precioLabel.Location = new System.Drawing.Point(44, 132);
             precioLabel.Name = "precioLabel";
             precioLabel.Size = new System.Drawing.Size(52, 17);
             precioLabel.TabIndex = 10;
@@ -340,7 +339,7 @@
             // precioTextBox
             // 
             this.precioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productoBindingSource, "Precio", true));
-            this.precioTextBox.Location = new System.Drawing.Point(151, 370);
+            this.precioTextBox.Location = new System.Drawing.Point(136, 127);
             this.precioTextBox.Name = "precioTextBox";
             this.precioTextBox.Size = new System.Drawing.Size(104, 22);
             this.precioTextBox.TabIndex = 11;
@@ -348,7 +347,7 @@
             // tipoLabel
             // 
             tipoLabel.AutoSize = true;
-            tipoLabel.Location = new System.Drawing.Point(59, 423);
+            tipoLabel.Location = new System.Drawing.Point(44, 180);
             tipoLabel.Name = "tipoLabel";
             tipoLabel.Size = new System.Drawing.Size(40, 17);
             tipoLabel.TabIndex = 12;
@@ -357,7 +356,7 @@
             // tipoTextBox
             // 
             this.tipoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productoBindingSource, "Tipo", true));
-            this.tipoTextBox.Location = new System.Drawing.Point(151, 420);
+            this.tipoTextBox.Location = new System.Drawing.Point(136, 177);
             this.tipoTextBox.Name = "tipoTextBox";
             this.tipoTextBox.Size = new System.Drawing.Size(104, 22);
             this.tipoTextBox.TabIndex = 13;
@@ -383,6 +382,7 @@
             this.Controls.Add(this.productoBindingNavigator);
             this.Name = "FormProducto";
             this.Text = "Productos";
+            this.Load += new System.EventHandler(this.FormProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productoBindingNavigator)).EndInit();
             this.productoBindingNavigator.ResumeLayout(false);
