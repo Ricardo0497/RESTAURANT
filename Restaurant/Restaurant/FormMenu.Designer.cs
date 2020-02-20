@@ -35,11 +35,11 @@
             this.mensualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cambiarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contrasenaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contrasenaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -77,6 +77,7 @@
             this.diarioToolStripMenuItem.Name = "diarioToolStripMenuItem";
             this.diarioToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.diarioToolStripMenuItem.Text = "Diario";
+            this.diarioToolStripMenuItem.Click += new System.EventHandler(this.diarioToolStripMenuItem_Click);
             // 
             // semanalToolStripMenuItem
             // 
@@ -110,6 +111,18 @@
             this.cambiarToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.cambiarToolStripMenuItem.Text = "Cambiar";
             // 
+            // usuarioToolStripMenuItem
+            // 
+            this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.usuarioToolStripMenuItem.Text = "Usuario";
+            // 
+            // contrasenaToolStripMenuItem
+            // 
+            this.contrasenaToolStripMenuItem.Name = "contrasenaToolStripMenuItem";
+            this.contrasenaToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.contrasenaToolStripMenuItem.Text = "Contrasena";
+            // 
             // agregarToolStripMenuItem
             // 
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
@@ -128,18 +141,6 @@
             this.productoToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.productoToolStripMenuItem.Text = "Producto";
             // 
-            // usuarioToolStripMenuItem
-            // 
-            this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.usuarioToolStripMenuItem.Text = "Usuario";
-            // 
-            // contrasenaToolStripMenuItem
-            // 
-            this.contrasenaToolStripMenuItem.Name = "contrasenaToolStripMenuItem";
-            this.contrasenaToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.contrasenaToolStripMenuItem.Text = "Contrasena";
-            // 
             // menuToolStripMenuItem
             // 
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -151,7 +152,7 @@
             // facturaToolStripMenuItem
             // 
             this.facturaToolStripMenuItem.Name = "facturaToolStripMenuItem";
-            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
             this.facturaToolStripMenuItem.Text = "Factura";
             // 
             // seguridadToolStripMenuItem
@@ -165,8 +166,9 @@
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(121, 26);
             this.loginToolStripMenuItem.Text = "Login";
+            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // button1
             // 

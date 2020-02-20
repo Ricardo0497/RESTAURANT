@@ -21,5 +21,15 @@ namespace Restaurant
         {
             MessageBox.Show("HOlaMundo"); 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
