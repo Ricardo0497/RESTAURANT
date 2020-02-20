@@ -112,7 +112,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "FormUsuario";
-            this.Text = "FormUsuario";
+            this.Text = "CAMBIAR USUARIO";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

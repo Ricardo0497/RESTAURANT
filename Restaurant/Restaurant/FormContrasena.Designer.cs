@@ -81,6 +81,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "ATRAS";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -132,7 +133,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormContrasena";
-            this.Text = "FormContrasena";
+            this.Text = "CAMBIAR CONTRASENA";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

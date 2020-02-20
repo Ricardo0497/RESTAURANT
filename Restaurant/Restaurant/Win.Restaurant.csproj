@@ -121,6 +121,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeguridadBl.cs" />
+    <EmbeddedResource Include="FormAgregar.resx">
+      <DependentUpon>FormAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormComidas.resx">
+      <DependentUpon>FormComidas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormContrasena.resx">
       <DependentUpon>FormContrasena.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,11 +142,17 @@
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMensual.resx">
+      <DependentUpon>FormMensual.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormProducto.resx">
       <DependentUpon>FormProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSemanal.resx">
+      <DependentUpon>FormSemanal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUsuario.resx">
       <DependentUpon>FormUsuario.cs</DependentUpon>
