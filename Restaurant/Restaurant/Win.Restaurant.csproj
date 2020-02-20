@@ -121,8 +121,17 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeguridadBl.cs" />
+    <EmbeddedResource Include="FormContrasena.resx">
+      <DependentUpon>FormContrasena.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDiario.resx">
       <DependentUpon>FormDiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEliminar.resx">
+      <DependentUpon>FormEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFactura.resx">
+      <DependentUpon>FormFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -132,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormProducto.resx">
       <DependentUpon>FormProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsuario.resx">
+      <DependentUpon>FormUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

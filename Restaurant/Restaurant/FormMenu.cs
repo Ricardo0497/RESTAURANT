@@ -83,9 +83,7 @@ namespace Restaurant
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var formComidas = new FormComidas();
             
-            formComidas.Show();
         }
 
         private void reportesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -107,6 +105,13 @@ namespace Restaurant
         {
             var formProducto = new FormProducto();
             formProducto.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var formComidas = new FormComidas();
+
+            formComidas.Show();
         }
     }
 }
