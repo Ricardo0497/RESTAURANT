@@ -76,21 +76,21 @@
             // diarioToolStripMenuItem
             // 
             this.diarioToolStripMenuItem.Name = "diarioToolStripMenuItem";
-            this.diarioToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.diarioToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
             this.diarioToolStripMenuItem.Text = "Diario";
             this.diarioToolStripMenuItem.Click += new System.EventHandler(this.diarioToolStripMenuItem_Click);
             // 
             // semanalToolStripMenuItem
             // 
             this.semanalToolStripMenuItem.Name = "semanalToolStripMenuItem";
-            this.semanalToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.semanalToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
             this.semanalToolStripMenuItem.Text = "Semanal";
             this.semanalToolStripMenuItem.Click += new System.EventHandler(this.semanalToolStripMenuItem_Click);
             // 
             // mensualToolStripMenuItem
             // 
             this.mensualToolStripMenuItem.Name = "mensualToolStripMenuItem";
-            this.mensualToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.mensualToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
             this.mensualToolStripMenuItem.Text = "Mensual";
             this.mensualToolStripMenuItem.Click += new System.EventHandler(this.mensualToolStripMenuItem_Click);
             // 
@@ -117,14 +117,14 @@
             // usuarioToolStripMenuItem
             // 
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
             this.usuarioToolStripMenuItem.Text = "Usuario";
             this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
             // 
             // contrasenaToolStripMenuItem
             // 
             this.contrasenaToolStripMenuItem.Name = "contrasenaToolStripMenuItem";
-            this.contrasenaToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.contrasenaToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
             this.contrasenaToolStripMenuItem.Text = "Contrasena";
             this.contrasenaToolStripMenuItem.Click += new System.EventHandler(this.contrasenaToolStripMenuItem_Click);
             // 
@@ -159,7 +159,7 @@
             // facturaToolStripMenuItem
             // 
             this.facturaToolStripMenuItem.Name = "facturaToolStripMenuItem";
-            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
             this.facturaToolStripMenuItem.Text = "Factura";
             this.facturaToolStripMenuItem.Click += new System.EventHandler(this.facturaToolStripMenuItem_Click);
             // 
@@ -199,6 +199,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMenu";
             this.Text = "Menu Principal";
+            this.Load += new System.EventHandler(this.FormMenu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

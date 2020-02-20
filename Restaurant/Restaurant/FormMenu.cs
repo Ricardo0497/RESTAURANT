@@ -21,7 +21,7 @@ namespace Restaurant
         {
             var formLogin = new FormLogin();
             formLogin.ShowDialog();
-            MessageBox.Show("Bienvenidos a Nuestro Sistema");
+            
         }
 
         private void diarioToolStripMenuItem_Click(object sender, EventArgs e)
@@ -91,6 +91,16 @@ namespace Restaurant
         private void reportesToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hola");
+
+            MessageBox.Show("Bienvenidos a Nuestro Sistema");
+
+            var formLogin = new FormLogin();
+            formLogin.ShowDialog();
         }
     }
 }
