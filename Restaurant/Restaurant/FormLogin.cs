@@ -29,7 +29,19 @@ namespace Restaurant
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Close();
+            string Usuario;
+            string Contrasena;
+            Usuario = textBox1.Text;
+            Contrasena = textBox2.Text;
+
+            if(Usuario  == "Admin" && Contrasena == "123")
+            {
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Usuario o Contrasena Incorrecta");
+            }
         }
     }
 }
