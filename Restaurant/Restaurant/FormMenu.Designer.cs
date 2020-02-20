@@ -71,6 +71,7 @@
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
             this.reportesToolStripMenuItem.Text = "Reportes";
+            this.reportesToolStripMenuItem.Click += new System.EventHandler(this.reportesToolStripMenuItem_Click);
             // 
             // diarioToolStripMenuItem
             // 
@@ -84,12 +85,14 @@
             this.semanalToolStripMenuItem.Name = "semanalToolStripMenuItem";
             this.semanalToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.semanalToolStripMenuItem.Text = "Semanal";
+            this.semanalToolStripMenuItem.Click += new System.EventHandler(this.semanalToolStripMenuItem_Click);
             // 
             // mensualToolStripMenuItem
             // 
             this.mensualToolStripMenuItem.Name = "mensualToolStripMenuItem";
             this.mensualToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.mensualToolStripMenuItem.Text = "Mensual";
+            this.mensualToolStripMenuItem.Click += new System.EventHandler(this.mensualToolStripMenuItem_Click);
             // 
             // mantenimientoToolStripMenuItem
             // 
@@ -114,26 +117,30 @@
             // usuarioToolStripMenuItem
             // 
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.usuarioToolStripMenuItem.Text = "Usuario";
+            this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
             // 
             // contrasenaToolStripMenuItem
             // 
             this.contrasenaToolStripMenuItem.Name = "contrasenaToolStripMenuItem";
-            this.contrasenaToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.contrasenaToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.contrasenaToolStripMenuItem.Text = "Contrasena";
+            this.contrasenaToolStripMenuItem.Click += new System.EventHandler(this.contrasenaToolStripMenuItem_Click);
             // 
             // agregarToolStripMenuItem
             // 
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
             this.agregarToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.agregarToolStripMenuItem.Text = "Agregar Usuario";
+            this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
             // 
             // eliminarUsuarioToolStripMenuItem
             // 
             this.eliminarUsuarioToolStripMenuItem.Name = "eliminarUsuarioToolStripMenuItem";
             this.eliminarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.eliminarUsuarioToolStripMenuItem.Text = "Eliminar Usuario";
+            this.eliminarUsuarioToolStripMenuItem.Click += new System.EventHandler(this.eliminarUsuarioToolStripMenuItem_Click);
             // 
             // productoToolStripMenuItem
             // 
@@ -152,8 +159,9 @@
             // facturaToolStripMenuItem
             // 
             this.facturaToolStripMenuItem.Name = "facturaToolStripMenuItem";
-            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
+            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.facturaToolStripMenuItem.Text = "Factura";
+            this.facturaToolStripMenuItem.Click += new System.EventHandler(this.facturaToolStripMenuItem_Click);
             // 
             // seguridadToolStripMenuItem
             // 
@@ -178,6 +186,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "MENU";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormMenu
             // 

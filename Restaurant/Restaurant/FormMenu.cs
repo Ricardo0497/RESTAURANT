@@ -27,8 +27,70 @@ namespace Restaurant
         private void diarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var formDiario = new FormDiario ();
-            formDiario.MdiParent = this;
+           
             formDiario.Show();
+        }
+
+        private void semanalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formDiario = new FormDiario();
+            
+            formDiario.Show();
+
+        }
+
+        private void mensualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formMensual = new FormMensual();
+            
+            formMensual.Show();
+        }
+
+        private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formUsuario = new FormUsuario();
+            
+            formUsuario.Show();
+        }
+
+        private void contrasenaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formContrasena = new FormContrasena();
+           
+            formContrasena.Show();
+        }
+
+        private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formAgregar = new FormAgregar();
+            
+            formAgregar.Show();
+        }
+
+        private void eliminarUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formEliminar = new FormEliminar();
+            
+            formEliminar.Show();
+        }
+
+        private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formFactura = new FormFactura();
+           
+            formFactura.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var formComidas = new FormComidas();
+            
+            formComidas.Show();
+        }
+
+        private void reportesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
