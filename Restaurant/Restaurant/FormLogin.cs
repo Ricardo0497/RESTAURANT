@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BL.Restaurant;
+using Restaurant;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,14 @@ namespace Restaurant
 {
     public partial class FormLogin : Form
     {
+
+        RestaurantSeguridadBL  _seguridad;
+
         public FormLogin()
         {
             InitializeComponent();
+
+            _seguridad = new RestaurantSeguridadBL ();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -29,12 +36,18 @@ namespace Restaurant
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+
+
             string Usuario;
             string Contrasena;
+
             Usuario = textBox1.Text;
             Contrasena = textBox2.Text;
 
-            if(Usuario  == "Admin" && Contrasena == "123")
+
+            var resultado = _seguridad.Autorizar (Usuario, Contrasena);
+
+            if(resultado == true)
             {
                 this.Close();
             }
