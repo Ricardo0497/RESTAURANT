@@ -102,5 +102,11 @@ namespace Restaurant
             var formLogin = new FormLogin();
             formLogin.ShowDialog();
         }
+
+        private void productoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formProducto = new FormProducto();
+            formProducto.ShowDialog();
+        }
     }
 }
