@@ -161,7 +161,7 @@
             this.productoBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.productoBindingNavigator.Name = "productoBindingNavigator";
             this.productoBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.productoBindingNavigator.Size = new System.Drawing.Size(629, 27);
+            this.productoBindingNavigator.Size = new System.Drawing.Size(750, 27);
             this.productoBindingNavigator.TabIndex = 0;
             this.productoBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -274,7 +274,7 @@
             this.productoDataGridView.Location = new System.Drawing.Point(8, 200);
             this.productoDataGridView.Name = "productoDataGridView";
             this.productoDataGridView.RowTemplate.Height = 24;
-            this.productoDataGridView.Size = new System.Drawing.Size(609, 220);
+            this.productoDataGridView.Size = new System.Drawing.Size(670, 220);
             this.productoDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -376,7 +376,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(629, 508);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(750, 508);
             this.Controls.Add(this.button1);
             this.Controls.Add(activoLabel);
             this.Controls.Add(this.activoCheckBox);

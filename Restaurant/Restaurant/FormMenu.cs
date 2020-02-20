@@ -63,7 +63,7 @@ namespace Restaurant
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var formAgregar = new FormAgregar();
-            
+           
             formAgregar.Show();
         }
 

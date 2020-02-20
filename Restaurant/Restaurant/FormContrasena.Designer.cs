@@ -61,21 +61,21 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(195, 156);
+            this.textBox1.Location = new System.Drawing.Point(228, 156);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(205, 22);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(195, 194);
+            this.textBox2.Location = new System.Drawing.Point(228, 194);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(205, 22);
             this.textBox2.TabIndex = 3;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(86, 275);
+            this.button1.Location = new System.Drawing.Point(91, 291);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 55);
             this.button1.TabIndex = 4;
@@ -85,7 +85,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(252, 275);
+            this.button2.Location = new System.Drawing.Point(257, 291);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(104, 55);
             this.button2.TabIndex = 5;
@@ -122,6 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(454, 358);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.pictureBox1);

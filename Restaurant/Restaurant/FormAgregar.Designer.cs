@@ -49,7 +49,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(217, 261);
+            this.button2.Location = new System.Drawing.Point(247, 261);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(107, 56);
             this.button2.TabIndex = 1;
@@ -78,7 +78,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(103, 175);
+            this.textBox1.Location = new System.Drawing.Point(103, 181);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(251, 22);
             this.textBox1.TabIndex = 4;
@@ -87,6 +87,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(439, 338);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
@@ -95,6 +96,7 @@
             this.Controls.Add(this.button1);
             this.Name = "FormAgregar";
             this.Text = "AGREGAR USUARIO";
+            this.Load += new System.EventHandler(this.FormAgregar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

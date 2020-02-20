@@ -154,9 +154,9 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(12, 0);
+            this.button7.Location = new System.Drawing.Point(12, 235);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(92, 42);
+            this.button7.Size = new System.Drawing.Size(76, 42);
             this.button7.TabIndex = 12;
             this.button7.Text = "ATRAS";
             this.button7.UseVisualStyleBackColor = true;
@@ -166,6 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(572, 465);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.pictureBox5);
