@@ -84,6 +84,15 @@ namespace BL.Restaurant
         {
             return ListaProductos;
         }
+
+        public bool GuardarProducto(Producto producto)
+        {
+            if(producto.Id == 0)
+            {
+                producto.Id = ListaProductos .Max(item => item.Id) + 1;
+            }
+            return true;
+        }
     }
 
     public class Producto

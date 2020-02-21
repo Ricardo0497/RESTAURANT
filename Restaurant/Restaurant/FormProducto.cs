@@ -15,6 +15,8 @@ namespace Restaurant
     {
         ProductosBL _productos;
 
+        public object ListaProductosBindingSource { get; private set; }
+
         public FormProducto()
         {
             InitializeComponent();
@@ -33,6 +35,22 @@ namespace Restaurant
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void productoBindingNavigator_RefreshItems(object sender, EventArgs e)
+        {
+
+        }
+
+        private void productoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            var producto = (Producto)productoBindingSource.Current;
+           
         }
     }
 }

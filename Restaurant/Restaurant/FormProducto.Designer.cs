@@ -64,6 +64,7 @@
             this.precioTextBox = new System.Windows.Forms.TextBox();
             this.tipoTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.Cancelar = new System.Windows.Forms.ToolStripButton();
             activoLabel = new System.Windows.Forms.Label();
             cantidadLabel = new System.Windows.Forms.Label();
             descripcionLabel = new System.Windows.Forms.Label();
@@ -136,10 +137,10 @@
             // 
             // productoBindingNavigator
             // 
-            this.productoBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.productoBindingNavigator.AddNewItem = null;
             this.productoBindingNavigator.BindingSource = this.productoBindingSource;
             this.productoBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.productoBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.productoBindingNavigator.DeleteItem = null;
             this.productoBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.productoBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
@@ -153,7 +154,8 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.productoBindingNavigatorSaveItem});
+            this.productoBindingNavigatorSaveItem,
+            this.Cancelar});
             this.productoBindingNavigator.Location = new System.Drawing.Point(0, 0);
             this.productoBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.productoBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
@@ -164,6 +166,7 @@
             this.productoBindingNavigator.Size = new System.Drawing.Size(750, 27);
             this.productoBindingNavigator.TabIndex = 0;
             this.productoBindingNavigator.Text = "bindingNavigator1";
+            this.productoBindingNavigator.RefreshItems += new System.EventHandler(this.productoBindingNavigator_RefreshItems);
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -189,6 +192,7 @@
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorDeleteItem.Click += new System.EventHandler(this.bindingNavigatorDeleteItem_Click);
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -253,11 +257,11 @@
             // productoBindingNavigatorSaveItem
             // 
             this.productoBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.productoBindingNavigatorSaveItem.Enabled = false;
             this.productoBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("productoBindingNavigatorSaveItem.Image")));
             this.productoBindingNavigatorSaveItem.Name = "productoBindingNavigatorSaveItem";
             this.productoBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
             this.productoBindingNavigatorSaveItem.Text = "Save Data";
+            this.productoBindingNavigatorSaveItem.Click += new System.EventHandler(this.productoBindingNavigatorSaveItem_Click);
             // 
             // productoDataGridView
             // 
@@ -372,6 +376,17 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // Cancelar
+            // 
+            this.Cancelar.AccessibleName = "";
+            this.Cancelar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("Cancelar.Image")));
+            this.Cancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Cancelar.Name = "Cancelar";
+            this.Cancelar.Size = new System.Drawing.Size(70, 24);
+            this.Cancelar.Text = "Cancelar";
+            this.Cancelar.Visible = false;
+            // 
             // FormProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -436,5 +451,6 @@
         private System.Windows.Forms.TextBox precioTextBox;
         private System.Windows.Forms.TextBox tipoTextBox;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripButton Cancelar;
     }
 }
