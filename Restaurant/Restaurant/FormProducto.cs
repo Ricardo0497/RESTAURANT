@@ -74,14 +74,14 @@ namespace Restaurant
 
             var resultado = _productos.GuardarProducto(producto);
             
-            if (resultado== true)
+            if (resultado.Exitoso== true )
             {
                 productoBindingSource.ResetBindings(false);
                 DeshabilitarHabilitarBotones(true); 
             }
             else
             {
-                MessageBox.Show("Error al guardar producto");
+                MessageBox.Show(resultado.Mensaje);
             }
            
         }

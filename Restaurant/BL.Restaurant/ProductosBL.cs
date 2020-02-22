@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace BL.Restaurant
 {
-   public class ProductosBL
+    public class ProductosBL
     {
-       public  BindingList<Producto> ListaProductos { get; set; }
+        public BindingList<Producto> ListaProductos { get; set; }
 
 
         public ProductosBL()
@@ -21,7 +21,7 @@ namespace BL.Restaurant
             producto1.Descripcion = "Baleadas";
             producto1.Cantidad = 500;
             producto1.Precio = 18;
-            producto1.Tipo = "Desayuno"; 
+            producto1.Tipo = "Desayuno";
             producto1.Activo = true;
 
             ListaProductos.Add(producto1);
@@ -85,33 +85,64 @@ namespace BL.Restaurant
             return ListaProductos;
         }
 
-        public bool GuardarProducto(Producto producto)
+        public Resultado  GuardarProducto(Producto producto)
         {
-            if(producto.Id == 0)
+            var resultado = Validar(producto);
+            if(resultado.Exitoso == false)
             {
-                producto.Id = ListaProductos .Max(item => item.Id) + 1;
+                return resultado;
             }
-            return true;
+            if (producto.Id == 0)
+            {
+                producto.Id = ListaProductos.Max(item => item.Id) + 1;
+            }
+            resultado.Exitoso = true;
+            return resultado;
         }
         public void AgregarProducto()
         {
             var nuevoProducto = new Producto();
             ListaProductos.Add(nuevoProducto);
-           
+
         }
         public bool EliminarProducto(int id)
         {
             foreach (var producto in ListaProductos)
             {
-                if(producto.Id == id)
+                if (producto.Id == id)
                 {
                     ListaProductos.Remove(producto);
-                        return true;
+                    return true;
                 }
             }
 
-            
+
             return false;
+        }
+        private Resultado Validar(Producto producto)
+        {
+            var resultado = new Resultado();
+            resultado.Exitoso = true;
+
+            if(string.IsNullOrEmpty (producto.Descripcion) == true)
+            {
+                resultado.Mensaje = "Ingrese una Descripcion";
+                resultado.Exitoso = false;
+            }
+
+            if (producto.Cantidad >0)
+            {
+                resultado.Mensaje = "La Cantidad Debe Ser Mayor que Cero(0)";
+                resultado.Exitoso = false;
+            }
+
+            if (producto.Precio > 0)
+            {
+                resultado.Mensaje = "La Cantidad Debe Ser Mayor que Cero(0)";
+                resultado.Exitoso = false;
+            }
+
+            return resultado;
         }
     }
 
@@ -124,4 +155,10 @@ namespace BL.Restaurant
         public string Tipo { get; set; }
         public bool Activo { get; set; }
     }
+
+    public class Resultado
+    {
+        public bool Exitoso { get; set; }
+        public string Mensaje { get; set; }
+}
 }
