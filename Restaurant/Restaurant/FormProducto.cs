@@ -39,11 +39,18 @@ namespace Restaurant
 
         private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
         {
+          
+
             if (idTextBox.Text!= "")
             {
-                var id = Convert.ToInt32(idTextBox.Text);
-                Eliminar(id);
-        }
+                var resultado = MessageBox.Show("Desea Eliminar Este Registro?", "ELiminar", MessageBoxButtons.YesNo);
+                if (resultado == DialogResult.Yes)
+                {
+                    var id = Convert.ToInt32(idTextBox.Text);
+                    Eliminar(id);
+                }
+
+               }
         }
 
         private void Eliminar(int id)
