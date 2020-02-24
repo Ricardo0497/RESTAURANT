@@ -37,6 +37,7 @@
             System.Windows.Forms.Label tipoLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProducto));
             this.productoBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.productoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -57,7 +58,6 @@
             this.precioTextBox = new System.Windows.Forms.TextBox();
             this.tipoTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.productoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             activoLabel = new System.Windows.Forms.Label();
             cantidadLabel = new System.Windows.Forms.Label();
             descripcionLabel = new System.Windows.Forms.Label();
@@ -155,6 +155,10 @@
             this.productoBindingNavigator.TabIndex = 0;
             this.productoBindingNavigator.Text = "bindingNavigator1";
             this.productoBindingNavigator.RefreshItems += new System.EventHandler(this.productoBindingNavigator_RefreshItems);
+            // 
+            // productoBindingSource
+            // 
+            this.productoBindingSource.DataSource = typeof(BL.Restaurant.Producto);
             // 
             // bindingNavigatorCountItem
             // 
@@ -323,10 +327,6 @@
             this.button1.Text = "ATRAS";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // productoBindingSource
-            // 
-            this.productoBindingSource.DataSource = typeof(BL.Restaurant.Producto);
             // 
             // FormProducto
             // 

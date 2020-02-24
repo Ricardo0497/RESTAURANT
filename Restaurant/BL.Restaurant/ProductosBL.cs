@@ -130,18 +130,19 @@ namespace BL.Restaurant
                 resultado.Exitoso = false;
             }
 
-            if (producto.Cantidad >0)
+            if (producto.Cantidad <= 0)
             {
-                resultado.Mensaje = "La Cantidad Debe Ser Mayor que Cero(0)";
+                resultado.Mensaje = " La Cantidad Debe Ser Mayor que Cero(0)";
                 resultado.Exitoso = false;
             }
 
-            if (producto.Precio > 0)
+            if (producto.Precio <= 0)
             {
-                resultado.Mensaje = "La Cantidad Debe Ser Mayor que Cero(0)";
+                resultado.Mensaje = "El Precio Debe Ser Mayor que Cero(0)";
                 resultado.Exitoso = false;
             }
 
+          
             return resultado;
         }
     }

@@ -13,15 +13,15 @@ namespace Restaurant
 {
     public partial class FormProducto : Form
     {
-        ProductosBL _productos;
+        ProductosBL _productos; // Creacion de Variable
 
         public object ListaProductosBindingSource { get; private set; }
 
-        public FormProducto()
+        public FormProducto() // Constructor
         {
             InitializeComponent();
 
-            _productos = new ProductosBL();
+            _productos = new ProductosBL(); // Inicializamos Variable
             productoBindingSource.DataSource = _productos.ObtenerProductos();
 
         }
