@@ -120,5 +120,10 @@ namespace Restaurant
             DeshabilitarHabilitarBotones(true);
             Eliminar(0);
         }
+
+        private void tipoTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

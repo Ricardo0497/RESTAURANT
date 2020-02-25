@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace BL.Restaurant
 {
     public class ProductosBL
@@ -124,7 +125,7 @@ namespace BL.Restaurant
             var resultado = new Resultado();
             resultado.Exitoso = true;
 
-            if(string.IsNullOrEmpty (producto.Descripcion) == true)
+            if (string.IsNullOrEmpty(producto.Descripcion) == true)
             {
                 resultado.Mensaje = "Ingrese una Descripcion";
                 resultado.Exitoso = false;
@@ -142,7 +143,12 @@ namespace BL.Restaurant
                 resultado.Exitoso = false;
             }
 
-          
+
+            if (producto.Tipo ==null)
+            {
+                resultado.Mensaje = "El Tipo No Puede Estar Vacio";
+                resultado.Exitoso = false;
+            }
             return resultado;
         }
     }
