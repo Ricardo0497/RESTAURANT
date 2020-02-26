@@ -14,6 +14,7 @@ namespace Restaurant
     public partial class FormProducto : Form
     {
         ProductosBL _productos; // Creacion de Variable
+       // private KeyPressEventArgs v;
 
         public object ListaProductosBindingSource { get; private set; }
 
@@ -123,7 +124,7 @@ namespace Restaurant
 
         private void tipoTextBox_TextChanged(object sender, EventArgs e)
         {
-
+        //   Validar.SoloLetras(v);
         }
     }
 }
