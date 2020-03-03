@@ -40,10 +40,8 @@ namespace BL.Restaurant
             {
                 return resultado;
             }
-            if (producto.Id == 0)
-            {
-                producto.Id = ListaProductos.Max(item => item.Id) + 1;
-            }
+            _contexto.SaveChanges();  // el entity se encarga de hacer el resto de los cambiios
+
             resultado.Exitoso = true;
             return resultado;
         }
@@ -60,6 +58,7 @@ namespace BL.Restaurant
                 if (producto.Id == id)
                 {
                     ListaProductos.Remove(producto);
+                    _contexto.SaveChanges();
                     return true;
                 }
             }

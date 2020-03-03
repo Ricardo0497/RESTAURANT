@@ -85,7 +85,8 @@ namespace Restaurant
             if (resultado.Exitoso== true )
             {
                 productoBindingSource.ResetBindings(false);
-                DeshabilitarHabilitarBotones(true); 
+                DeshabilitarHabilitarBotones(true);
+                MessageBox.Show("Menu Guardado");
             }
             else
             {
