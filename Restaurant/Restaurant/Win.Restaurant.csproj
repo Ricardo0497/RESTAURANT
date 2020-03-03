@@ -182,6 +182,16 @@
     <None Include="Properties\DataSources\BL.Restaurant.Producto.datasource" />
     <None Include="Properties\DataSources\BL.Restaurant.ProductosBL.datasource" />
     <None Include="Properties\DataSources\BL.Restaurant.RestaurantSeguridadBL.datasource" />
+    <None Include="Properties\DataSources\System.Data.Entity.SqlServer.SqlAzureExecutionStrategy1.datasource" />
+    <None Include="Properties\DataSources\System.Data.Entity.SqlServer.SqlFunctions1.datasource" />
+    <None Include="Properties\DataSources\System.Data.Entity.SqlServer.SqlHierarchyIdFunctions1.datasource" />
+    <None Include="Properties\DataSources\System.Data.Entity.SqlServer.SqlProviderServices1.datasource" />
+    <None Include="Properties\DataSources\System.Data.Entity.SqlServer.SqlServerMigrationSqlGenerator1.datasource" />
+    <None Include="Properties\DataSources\System.Data.Entity.SqlServer.SqlSpatialFunctions1.datasource" />
+    <None Include="Properties\DataSources\System.Data.Entity.SqlServer.SqlSpatialServices1.datasource" />
+    <None Include="Properties\DataSources\System.Data.Entity.SqlServer.Utilities.TaskExtensions+CultureAwaiter1.datasource" />
+    <None Include="Properties\DataSources\System.Data.Entity.SqlServer.Utilities.TaskExtensions+CultureAwaiter`11.datasource" />
+    <None Include="Properties\DataSources\System.Data.Entity.SqlServer.Utilities.TaskExtensions1.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
