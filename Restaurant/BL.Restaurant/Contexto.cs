@@ -8,19 +8,19 @@ using System.Threading.Tasks;
 
 namespace BL.Restaurant
 {
-    public class Contexto : DbContext //heredar clases enC#
+    public class Contexto : DbContext 
     {
         public Contexto() : base("Menu")
         {
 
         }
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)   //Crear Modelo y base de dato
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)   
         {
-            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();// Remueva las tablas pluralizadas
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
 
-        public DbSet<Producto> Productos { get; set; } //Crea la Lista  Jalando los Datos de Producto BL
+        public DbSet<Producto> Productos { get; set; } 
     }
 
 }

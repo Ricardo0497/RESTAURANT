@@ -74,7 +74,7 @@ namespace Restaurant
 
         }
 
-        private void productoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void productoBindingNavigatorSaveItem_Click(object sender, EventArgs e)  //
         {
             productoBindingSource.EndEdit(); 
 
